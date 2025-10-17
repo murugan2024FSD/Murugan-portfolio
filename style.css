@@ -1,11 +1,199 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>MURUGAN - IT Support Specialist Portfolio</title>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Young+Serif&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #003366; /* Deep Navy Blue */
+            --secondary-color: #FFD700; /* Gold/Yellow Accent */
+            --background-light: #F4F4F9; /* Off-White Background */
+            --text-dark: #333333;
+            --font-heading: 'Montserrat', sans-serif;
+            --font-body: 'Young Serif', serif;
+        }
+
+        body {
+            font-family: var(--font-body);
+            margin: 0;
+            background-color: var(--background-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #FFFFFF; /* White paper effect */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+            padding: 30px;
+        }
+
+        /* Header Styling */
+        .section-one {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 40px;
+            margin: -30px -30px 30px -30px; /* Expands to container edges */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .section-one__Name {
+            font-size: 3em;
+            font-family: var(--font-heading);
+            margin: 0;
+        }
+        .section-one__Role {
+            font-size: 1.2em;
+            margin: 0;
+            font-weight: 600;
+            color: var(--secondary-color);
+        }
+        .section-one__contact {
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 700;
+            transition: background-color 0.3s;
+            font-family: var(--font-heading);
+        }
+        .section-one__contact:hover {
+            background-color: #FFA500;
+        }
+
+        /* Contact Info */
+        .contact-info {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 30px;
+            padding: 10px 0;
+            border-bottom: 2px solid var(--background-light);
+            flex-wrap: wrap; /* Allows wrapping on small screens */
+        }
+        .contact-info strong {
+            font-family: var(--font-heading);
+        }
+        .contact-info a {
+             color: var(--primary-color);
+        }
+
+        /* Section Headings */
+        h2 {
+            font-family: var(--font-heading);
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 5px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-top: 10px; /* Added for spacing */
+        }
+        .experience__heading {
+            border-bottom: 3px solid var(--secondary-color);
+        }
+
+        /* Experience Blocks (Premium Look) */
+        .experience-block {
+            margin-bottom: 35px;
+            padding: 20px;
+            border-left: 5px solid var(--secondary-color); /* Gold accent stripe */
+            background-color: #FAFAFA;
+        }
+        .experience-block h5 {
+            color: #666;
+            margin-bottom: 5px;
+            font-family: var(--font-heading);
+        }
+        .experience-block h3 {
+            color: var(--primary-color);
+            margin: 0;
+            font-family: var(--font-heading);
+        }
+
+        /* Skills List */
+        .section-seven__desc {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .section-seven__desc li {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-family: var(--font-heading);
+            font-weight: 600;
+            margin: 0;
+        }
+
+        /* Footer */
+        .section-ten {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            margin: 50px -30px -30px -30px;
+            text-align: center;
+        }
+        .section-ten a {
+            color: var(--secondary-color);
+            text-decoration: none;
+        }
+
+        /* --- MEDIA QUERY: MOBILE DEVICES (Responsive Adjustments) --- */
+        @media (max-width: 600px) {
+            
+            .container {
+                padding: 15px; /* Reduce main padding */
+            }
+
+            /* Header (Stacked Layout) */
+            .section-one {
+                flex-direction: column; 
+                align-items: flex-start;
+                padding: 20px;
+                margin: -15px -15px 20px -15px;
+            }
+            .section-one__Name {
+                font-size: 2em;
+            }
+            .section-one__Role {
+                font-size: 1em;
+                margin-bottom: 15px;
+            }
+            .section-one__contact {
+                width: 100%; /* Make button full width */
+                text-align: center;
+                margin-top: 10px;
+            }
+
+            /* Contact Info (Stacked Layout) */
+            .contact-info {
+                flex-direction: column;
+                gap: 5px;
+            }
+
+            /* Skills (Smaller tags) */
+            .section-seven__desc li {
+                padding: 6px 10px;
+                font-size: 0.8em;
+            }
+
+            /* Footer Adjustment */
+            .section-ten {
+                margin: 30px -15px -15px -15px;
+                padding: 15px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -13,9 +201,15 @@
         <div class="section-one">
             <h1 class="section-one__Name">MURUGAN</h1>
             <p class="section-one__Role">HARDWARE AND NETWORK ENGINEER | IT SUPPORT SPECIALIST</p>
-            <a class="section-one__contact" href="contact form.html">Contact</a>
+            <a class="section-one__contact" href="contact-form.html">Contact Me</a>
         </div>
 
+        <div class="contact-info">
+            <p><strong>Email:</strong> jiomurugan048@gmail.com</p>
+            <p><strong>Phone:</strong> 9047711276</p>
+            <p><strong>Portfolio:</strong> <a href="https://murugan2024fsd.github.io/Murugan-portfolio/index.html">View Portfolio Site</a></p>
+        </div>
+        
         <div class="section-two">
             <h2 class="section-two__title">SUMMARY / ABOUT ME</h2>
             <p class="section-two__Desc">
@@ -28,12 +222,14 @@
             <ul class="section-three__Desc">
                 <li>Total Experience : 3 years 5 months </li>
                 <li>Current location : Bangalore</li>
-                <li>Date Of Birth : 24-02-2000</li>
+                <li>Date Of Birth : 24-02-000</li>
                 <li>Gender : Male</li>
             </ul>
         </div>
+        
+        <h2 class="experience__heading">EXPERIENCE</h2>
 
-        <div class="section-four-new">
+        <div class="section-four-new experience-block">
             <h5 class="section-four-new__date">03-06-2024 to Current</h5>
             <h3 class="section-four-new__Role">IT Support Engineer</h3>
             <h2 class="section-four-new__company">GET IT. SOLUTIONS</h2>
@@ -42,14 +238,14 @@
             </p>
         </div>
 
-        <div class="section-four">
+        <div class="section-four experience-block">
             <h5 class="section-four__date">06-04-2022 to 02-03-2024</h5>
             <h3 class="section-four__Role">NETWORK IT ASSISTANT & E COMMERCE</h3>
             <h2 class="section-four__company">APOLLO PHARMACY CORPORATE OFFICE PRIVATE LIMITED</h2>
             <p class="section-four__des">maintains and upgrades networks and servers, installs new hardware and applications, and vmware monitors for updates, responsible to maintain the virtualization software of a ecommerce store, cctv monitoring, diagnosing, installing, configuring, and maintaining CCTV camera systems and their associated components.</p>
         </div>
 
-        <div class="section-five">
+        <div class="section-five experience-block">
             <h4 class="section-five__Date">26-03-2024 to 08-05-2024</h4>
             <h3 class="section-five__company">FIELD EXECUTIVE, IVIS INTERNATIONAL PVT. LTD</h3>
             <p class="section-five__Desc">Bank security cameras enable safety personnel to detect and prevent threats while optimizing customer loyalty and experience. Without a bank video surveillance, maintains and upgrades networks and servers, installs new hardware and applications and cctv installation</p>
@@ -63,7 +259,7 @@
         </div>
 
         <div class="section-seven">
-            <h2 class="section-seven__title">SKILLS</h2>
+            <h2 class="section-seven__title">TECHNICAL SKILLS</h2>
             <ul class="section-seven__desc">
                 <li>**Server & OS:** Windows Server 2019 OS, Linux OS, Windows OS Installation, Server Management, Active Directory</li>
                 <li>**Networking & Security:** Cisco switch, Sophos, Netgear, TPLink, Router Installation, CCTV installation/service</li>
@@ -72,7 +268,7 @@
                 <li>**Virtualization:** VMware vSphere, ESXi, vCenter Server</li>
             </ul>
         </div>
-
+        
         <div class="section-eight">
             <h2 class="section-eight__Role">ROLES AND RESPONSIBILITIES</h2>
             <ul class="section-eight__desc">
