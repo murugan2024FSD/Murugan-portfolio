@@ -1,131 +1,179 @@
-<!doctype html>
+!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>M. Murugan — Hardware & Network Engineer</title>
-  <meta name="description" content="Portfolio of M. Murugan — Hardware & Network Engineer | IT Support Specialist" />
+  <meta name="description" content="Premium Animated Portfolio of M. Murugan — Hardware & Network Engineer | IT Support Specialist" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <style>
-    :root{--bg:#0f1724;--card:#0b1320;--muted:#9aa4b2;--accent:#06b6d4;--glass:rgba(255,255,255,0.04)}
-    *{box-sizing:border-box}
-    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;color:#e6eef6;background:linear-gradient(180deg,#071124 0%,#071829 100%);-webkit-font-smoothing:antialiased}
-    .container{max-width:1000px;margin:36px auto;padding:24px}
-    header{display:flex;gap:20px;align-items:center}
-    .photo{width:120px;height:120px;border-radius:20px;flex:0 0 120px;background:linear-gradient(135deg,#06202a,#0b3140);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--accent);font-size:22px}
-    .intro h1{margin:0;font-size:26px}
-    .intro p{margin:6px 0;color:var(--muted)}
-    .top-actions{margin-top:14px;display:flex;gap:10px}
-    a.btn{background:var(--accent);color:#052025;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:600}
-    a.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted);padding:10px 14px;border-radius:10px;text-decoration:none}
-    main{display:grid;grid-template-columns:1fr 320px;gap:20px;margin-top:24px}
-    .card{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));padding:18px;border-radius:14px;backdrop-filter:blur(6px);box-shadow:0 6px 18px rgba(2,6,23,0.6)}
-    h2{margin:0 0 8px 0;font-size:16px}
-    .section{margin-bottom:14px}
-    .skills{display:flex;flex-wrap:wrap;gap:8px}
-    .skill{background:var(--glass);padding:8px 10px;border-radius:8px;color:var(--muted);font-weight:600}
-    .experience-item{margin-bottom:12px}
-    .meta{font-size:13px;color:var(--muted)}
-    .contact-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px}
-    .contact-list a{color:var(--muted);text-decoration:none}
-    footer{margin-top:24px;color:var(--muted);font-size:13px;text-align:center}
-    @media (max-width:900px){main{grid-template-columns:1fr};.photo{width:96px;height:96px}}
+    :root {
+      --bg1: #0a0f1e;
+      --bg2: #08142d;
+      --accent: #00d4ff;
+      --muted: #a0aab8;
+      --card: rgba(255, 255, 255, 0.05);
+      --shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, var(--bg1), var(--bg2));
+      color: #e8f1ff;
+      overflow-x: hidden;
+    }
+    header {
+      text-align: center;
+      padding: 60px 20px 20px;
+      position: relative;
+    }
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle at 50% 20%, rgba(0,212,255,0.15), transparent 70%);
+      z-index: -1;
+    }
+    .photo {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #00d4ff, #0066ff);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 36px;
+      font-weight: 700;
+      color: #fff;
+      box-shadow: var(--shadow);
+      animation: float 3s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    h1 { font-size: 28px; margin-top: 20px; }
+    p { color: var(--muted); }
+    .btns { margin-top: 20px; display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
+    a.btn {
+      background: var(--accent);
+      color: #001020;
+      padding: 10px 18px;
+      border-radius: 12px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    a.btn:hover { background: #fff; color: #001020; transform: scale(1.05); }
+
+    main {
+      max-width: 1100px;
+      margin: 60px auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 24px;
+      padding: 0 20px;
+    }
+    .card {
+      background: var(--card);
+      border-radius: 18px;
+      padding: 24px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(8px);
+      transition: transform 0.3s;
+    }
+    .card:hover { transform: translateY(-6px); }
+    h2 { color: var(--accent); margin-top: 0; font-size: 18px; }
+    .skills { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
+    .skill {
+      background: rgba(255,255,255,0.07);
+      padding: 8px 12px;
+      border-radius: 10px;
+      font-size: 14px;
+      color: var(--muted);
+      transition: background 0.3s;
+    }
+    .skill:hover { background: rgba(0,212,255,0.2); color: #fff; }
+    footer {
+      text-align: center;
+      color: var(--muted);
+      padding: 30px;
+      font-size: 14px;
+      border-top: 1px solid rgba(255,255,255,0.05);
+      background: rgba(0,0,0,0.2);
+    }
+    @media(max-width:900px){ main{grid-template-columns:1fr;} }
   </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <div class="photo">MM</div>
-      <div class="intro">
-        <h1>M. Murugan</h1>
-        <p>Hardware & Network Engineer | IT Support Specialist — 3+ years experience</p>
-        <div class="top-actions">
-          <a class="btn" href="mailto:Jiomurugan048@gmail.com">Email: Jiomurugan048@gmail.com</a>
-          <a class="ghost" href="#download">Download Resume</a>
-          <a class="ghost" href="https://murugan2024fsd.github.io/Murugan-portfolio/index.html" target="_blank">Live Portfolio</a>
+  <header data-aos="fade-down">
+    <div class="photo">MM</div>
+    <h1>M. Murugan</h1>
+    <p>Hardware & Network Engineer | IT Support Specialist</p>
+    <div class="btns">
+      <a class="btn" href="mailto:Jiomurugan048@gmail.com">Email Me</a>
+      <a class="btn" href="murugan_resume.pdf" download>Download Resume</a>
+      <a class="btn" href="https://murugan2024fsd.github.io/Murugan-portfolio/index.html" target="_blank">Live Portfolio</a>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="card" data-aos="fade-up">
+        <h2>Professional Summary</h2>
+        <p>Passionate Hardware & Network Engineer with over 3 years of expertise in IT infrastructure, Windows Server, VMware, and network security. Adept at troubleshooting, optimizing system performance, and ensuring reliable operations across multiple branches.</p>
+      </div>
+      <div class="card" data-aos="fade-up" data-aos-delay="100">
+        <h2>Experience</h2>
+        <p><strong>IT Support Engineer – GET IT SOLUTIONS</strong><br><span>2024 - Present</span><br>Managing 40+ branches, Windows Server 2019, Sophos, Cisco, and ManageEngine support.</p>
+        <p><strong>Network IT Assistant – Apollo Pharmacies</strong><br><span>2022 - 2024</span><br>Maintained network backup for 800+ locations, CCTV systems, and VMware infrastructure.</p>
+        <p><strong>Field Executive – IVIS International Pvt Ltd</strong><br><span>2024</span><br>Installed & maintained bank security and CCTV systems.</p>
+      </div>
+      <div class="card" data-aos="fade-up" data-aos-delay="200">
+        <h2>Technical Skills</h2>
+        <div class="skills">
+          <span class="skill">Windows Server</span>
+          <span class="skill">Active Directory</span>
+          <span class="skill">VMware</span>
+          <span class="skill">Sophos Firewall</span>
+          <span class="skill">Cisco Networking</span>
+          <span class="skill">CCTV Setup</span>
+          <span class="skill">Linux & Windows OS</span>
+          <span class="skill">Printer Maintenance</span>
         </div>
       </div>
-    </header>
+      <div class="card" data-aos="fade-up" data-aos-delay="300">
+        <h2>Education</h2>
+        <p>Diploma in Computer Engineering — IRT Polytechnic College (2019)</p>
+      </div>
+    </section>
+    <aside>
+      <div class="card" data-aos="zoom-in">
+        <h2>Contact Info</h2>
+        <p><strong>Phone:</strong> <a href="tel:+919047711276" style="color:#00d4ff;">9047711276</a></p>
+        <p><strong>Email:</strong> Jiomurugan048@gmail.com</p>
+        <p><strong>Location:</strong> Bangalore</p>
+        <p><strong>DOB:</strong> 24-02-2000</p>
+      </div>
+      <div class="card" data-aos="zoom-in" data-aos-delay="100">
+        <h2>Languages</h2>
+        <p>Tamil • English • Kannada</p>
+      </div>
+    </aside>
+  </main>
 
-    <main>
-      <section>
-        <div class="card section">
-          <h2>Summary</h2>
-          <p class="meta">Highly motivated Hardware and Network Engineer with 3 years 5 months of experience in system administration, network infrastructure maintenance, virtualization, and multi-branch support. Skilled in Windows Server, VMware, Sophos, Cisco, CCTV, and printer maintenance. (Source: uploaded resume)</p>
-        </div>
+  <footer data-aos="fade-up">
+    © 2025 M. Murugan |Premium Portfolio |
+  </footer>
 
-        <div class="card section">
-          <h2>Experience</h2>
-
-          <div class="experience-item">
-            <strong>IT Support Engineer — GET IT. SOLUTIONS</strong>
-            <div class="meta">03-06-2024 – Current | Regional network management for 40 branches; Windows Server 2019; Sophos, Cisco, Netgear; TightVNC, UltraViewer, ManageEngine.</div>
-          </div>
-
-          <div class="experience-item">
-            <strong>Network IT Assistant — APOLLO PHARMACIES LIMITED</strong>
-            <div class="meta">06-04-2022 – 02-03-2024 | Maintained backup network for 800+ locations; CCTV; VMware monitoring.</div>
-          </div>
-
-          <div class="experience-item">
-            <strong>Field Executive — IVIS INTERNATIONAL PVT. LTD</strong>
-            <div class="meta">26-03-2024 – 08-05-2024 | Security systems support for bank clients; CCTV installation & maintenance.</div>
-          </div>
-        </div>
-
-        <div class="card section">
-          <h2>Technical Skills</h2>
-          <div class="skills">
-            <span class="skill">Windows Server 2019</span>
-            <span class="skill">Active Directory</span>
-            <span class="skill">VMware ESXi / vSphere</span>
-            <span class="skill">Sophos</span>
-            <span class="skill">Cisco Networking</span>
-            <span class="skill">CCTV Installation</span>
-            <span class="skill">Dot Matrix & Laser Printers</span>
-            <span class="skill">TightVNC / UltraViewer / ManageEngine</span>
-            <span class="skill">Linux & Windows OS</span>
-          </div>
-        </div>
-
-        <div class="card section">
-          <h2>Education</h2>
-          <p class="meta">Diploma in Computer Engineering — IRT Polytechnic College (Graduated: May 2019)</p>
-        </div>
-
-        <div class="card section">
-          <h2>Languages</h2>
-          <p class="meta">Tamil • English • Kannada</p>
-        </div>
-
-      </section>
-
-      <aside>
-        <div class="card section">
-          <h2>Contact</h2>
-          <ul class="contact-list">
-            <li><strong>Phone:</strong> <a href="tel:+919047711276">9047711276</a></li>
-            <li><strong>Email:</strong> <a href="mailto:Jiomurugan048@gmail.com">Jiomurugan048@gmail.com</a></li>
-            <li><strong>Portfolio:</strong> <a href="https://murugan2024fsd.github.io/Murugan-portfolio/index.html" target="_blank">murugan2024fsd.github.io</a></li>
-            <li><strong>Location:</strong> Bangalore</li>
-            <li><strong>DOB:</strong> 24-02-2000</li>
-          </ul>
-        </div>
-
-        <div class="card section">
-          <h2>Quick Links</h2>
-          <p class="meta">Place your resume PDF in the same folder and rename it <code>murugan_resume.pdf</code> to enable the download button. To edit details, change the text inside &lt;header&gt; and the contact list.</p>
-          <div style="margin-top:12px;display:flex;gap:8px;flex-direction:column">
-            <a class="ghost" href="#projects">Projects</a>
-            <a class="ghost" href="#certs">Certificates</a>
-          </div>
-        </div>
-
-      </aside>
-    </main>
-
-    <footer>
-      Built from resume snapshot. Update or request customization if you want a different style or a multi-page site.
-    </footer>
-  </div>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+  </script>
 </body>
 </html>
