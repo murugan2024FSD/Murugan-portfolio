@@ -1,85 +1,108 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+</head>
 
-body {
-  background: #f4f4f4;
-  color: #333;
-  line-height: 1.6;
-}
+<body>
+    <div class="container">
+        <div class="section-one">
+            <h1 class="section-one__Name">MURUGAN</h1>
+            <p class="section-one__Role">HARDWARE AND NETWORK ENGINEER | IT SUPPORT SPECIALIST</p>
+            <a class="section-one__contact" href="contact form.html">Contact</a>
+        </div>
 
-header {
-  background: #2c3e50;
-  color: #fff;
-  padding: 1rem;
-  text-align: center;
-}
+        <div class="section-two">
+            <h2 class="section-two__title">SUMMARY / ABOUT ME</h2>
+            <p class="section-two__Desc">
+                Highly motivated and results-driven professional with **3 years 5 months** of experience in system administration, network infrastructure maintenance, and virtualization. Proven ability to manage multi-branch operations, troubleshoot complex network issues, and maintain critical security systems (CCTV, Sophos) and peripherals (**Dot Matrix/Laser Printers**) across large regional areas.
+            </p>
+        </div>
 
-header h1 {
-  margin-bottom: 0.3rem;
-}
+        <div class="section-three">
+            <h2 class="section-three__title">PERSONAL DETAILS</h2>
+            <ul class="section-three__Desc">
+                <li>Total Experience : 3 years 5 months </li>
+                <li>Current location : Bangalore</li>
+                <li>Date Of Birth : 24-02-2000</li>
+                <li>Gender : Male</li>
+            </ul>
+        </div>
 
-nav a {
-  margin: 0 1rem;
-  color: #fff;
-  text-decoration: none;
-}
+        <div class="section-four-new">
+            <h5 class="section-four-new__date">03-06-2024 to Current</h5>
+            <h3 class="section-four-new__Role">IT Support Engineer</h3>
+            <h2 class="section-four-new__company">GET IT. SOLUTIONS</h2>
+            <p class="section-four-new__des">
+                Responsible for maintaining all server networks for **40 regional branches**, utilizing **Windows Server 2019 OS**, Sophos, Netgear, TPLink, and Cisco switches. Handles installation and maintenance of **Dot Matrix and Laser Printers**, and provides remote support using **TightVNC, UltraViewer, and ManageEngine**, managing **Active Directory** and CCTV services.
+            </p>
+        </div>
 
-main {
-  padding: 2rem;
-}
+        <div class="section-four">
+            <h5 class="section-four__date">06-04-2022 to 02-03-2024</h5>
+            <h3 class="section-four__Role">NETWORK IT ASSISTANT & E COMMERCE</h3>
+            <h2 class="section-four__company">APOLLO PHARMACY CORPORATE OFFICE PRIVATE LIMITED</h2>
+            <p class="section-four__des">maintains and upgrades networks and servers, installs new hardware and applications, and vmware monitors for updates, responsible to maintain the virtualization software of a ecommerce store, cctv monitoring, diagnosing, installing, configuring, and maintaining CCTV camera systems and their associated components.</p>
+        </div>
 
-section {
-  margin-bottom: 2rem;
-}
+        <div class="section-five">
+            <h4 class="section-five__Date">26-03-2024 to 08-05-2024</h4>
+            <h3 class="section-five__company">FIELD EXECUTIVE, IVIS INTERNATIONAL PVT. LTD</h3>
+            <p class="section-five__Desc">Bank security cameras enable safety personnel to detect and prevent threats while optimizing customer loyalty and experience. Without a bank video surveillance, maintains and upgrades networks and servers, installs new hardware and applications and cctv installation</p>
+        </div>
 
-h2 {
-  margin-bottom: 1rem;
-  color: #2c3e50;
-}
+        <div class="section-six">
+            <h2 class="section-six__EDU">EDUCATION</h2>
+            <p class="section-six__year">MAY 2019
+                DIPLOMA COMPUTER ENGINEERING
+                IRT POLYTECHNIC COLLEGE</p>
+        </div>
 
-ul {
-  list-style: disc;
-  padding-left: 1.5rem;
-}
+        <div class="section-seven">
+            <h2 class="section-seven__title">SKILLS</h2>
+            <ul class="section-seven__desc">
+                <li>**Server & OS:** Windows Server 2019 OS, Linux OS, Windows OS Installation, Server Management, Active Directory</li>
+                <li>**Networking & Security:** Cisco switch, Sophos, Netgear, TPLink, Router Installation, CCTV installation/service</li>
+                <li>**Peripherals:** **Dot Matrix & Laser Printer Maintenance**, Network Hardware installation</li>
+                <li>**Remote Support:** TightVNC, UltraViewer, ManageEngine, TeamViewer, Kaseya</li>
+                <li>**Virtualization:** VMware vSphere, ESXi, vCenter Server</li>
+            </ul>
+        </div>
 
-form {
-  background: #fff;
-  padding: 1rem;
-  border-radius: 5px;
-  max-width: 500px;
-}
+        <div class="section-eight">
+            <h2 class="section-eight__Role">ROLES AND RESPONSIBILITIES</h2>
+            <ul class="section-eight__desc">
+                <li>Managed and maintained comprehensive server and network infrastructure for **40 regional branches** (Get IT. Solutions).</li>
+                <li>Executed installation, troubleshooting, and routine maintenance for both **Dot Matrix** and **Laser Printers** (Get IT. Solutions).</li>
+                <li>Provided expert IT Support Engineering utilizing **Windows Server 2019 OS** and managing network devices from vendors like **Sophos, Cisco, Netgear, and TPLink**.</li>
+                <li>Responsible for providing assistance in troubleshooting, installing and testing network components, pc hardware and software onsite and remotely.</li>
+                <li>Responsible for 800+ e commerce store maintaining the Backup network,hardware, software, files on a regular Basis accordingly as per the company policies.</li>
+                <li>Responsible for Antivirus and Firewall Support.</li>
+                <li>Responsible for troubleshooting & Monitor CCTV & installation.</li>
+                <li>Remote Support through TeamViewer, Ultra viewer, Sapphire, Kaseya.</li>
+                <li>Timely analyses whether any repairs or replacements is needed.</li>
+            </ul>
+        </div>
 
-form input,
-form textarea {
-  width: 100%;
-  padding: 0.5rem;
-  margin-bottom: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
+        <div class="section-nine">
+            <h2 class="section-nine__lan">LANGUAGES KNOWN</h2>
+            <ul class="section-nine__desc">
+                <li>Tamil</li>
+                <li>English</li>
+                <li>Kannada</li>
+            </ul>
+        </div>
 
-form button {
-  background: #2c3e50;
-  color: #fff;
-  padding: 0.6rem 1.2rem;
-  border: none;
-  cursor: pointer;
-}
-
-form button:hover {
-  background: #34495e;
-}
-
-footer {
-  text-align: center;
-  padding: 1rem;
-  background: #2c3e50;
-  color: #fff;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-}
+        <div class="section-ten">
+            <p class="section-ten__title">Social Media:
+                <a>linkedin</a>
+            </p>
+            <p>&copy Murugan</p>
+        </div>
+    </div>
+</body>
+</html>
